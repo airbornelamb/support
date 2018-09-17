@@ -1,6 +1,6 @@
 @ECHO OFF
-REM Version 0.2
-REM Created by Joshua Lamb on 12SEP18
+REM Version 0.3
+REM Created by Joshua Lamb on 17SEP18
 
 SETLOCAL EnableDelayedExpansion
 TITLE DNS Agent Hang Fix
@@ -26,17 +26,17 @@ REM Set variables
 SET workdir=C:\uafix
 IF not exist %workdir% mkdir %workdir%
 SET dnsresetbatfile=%workdir%\dnsreset.bat
-SET dnsresetxmlurl=https://raw.githubusercontent.com/airbornelamb/DNSF/master/useragent/windows/hangfix/dnsreset.xml
+SET dnsresetxmlurl=https://raw.githubusercontent.com/airbornelamb/support/master/useragent/windows/hangfix/dnsreset.xml
 SET dnsresetxmlfile=%workdir%\dnsreset.xml
-SET retailxmlurl=https://raw.githubusercontent.com/airbornelamb/DNSF/master/useragent/windows/hangfix/retail.xml
+SET retailxmlurl=https://raw.githubusercontent.com/airbornelamb/support/master/useragent/windows/hangfix/retail.xml
 SET retailxmlfile=%workdir%\retail.xml
-SET mspxmlurl=https://raw.githubusercontent.com/airbornelamb/DNSF/master/useragent/windows/hangfix/msp.xml
+SET mspxmlurl=https://raw.githubusercontent.com/airbornelamb/support/master/useragent/windows/hangfix/msp.xml
 SET mspxmlfile=%workdir%\msp.xml
 
 REM Write dns reset
 (
 ECHO SETLOCAL EnableDelayedExpansion
-ECHO SET adapterlist="Local Area Connection" "Ethernet" "Wireless Network Connection" "Wi-Fi"
+ECHO SET adapterlist="Local Area Connection" "Local Area Connection 2" "Ethernet" "Wireless Network Connection" "Wi-Fi"
 ECHO ^(FOR %%%%a in ^(%%adapterlist%%^) DO ^(
 ECHO    netsh interface ip set dns %%%%a dhcp
 ECHO ^)^)
