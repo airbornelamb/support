@@ -26,11 +26,11 @@ REM Set variables
 SET workdir=C:\uafix
 IF not exist %workdir% mkdir %workdir%
 SET dnsresetbatfile=%workdir%\dnsreset.bat
-SET dnsresetxmlurl=https://raw.githubusercontent.com/airbornelamb/support/master/useragent/windows/hangfix/dnsreset.xml
+SET dnsresetxmlurl=https://raw.githubusercontent.com/DNSFilter/support/master/useragent/windows/hangfix/dnsreset.xml
 SET dnsresetxmlfile=%workdir%\dnsreset.xml
-SET retailxmlurl=https://raw.githubusercontent.com/airbornelamb/support/master/useragent/windows/hangfix/retail.xml
+SET retailxmlurl=https://raw.githubusercontent.com/DNSFilter/support/master/useragent/windows/hangfix/retail.xml
 SET retailxmlfile=%workdir%\retail.xml
-SET mspxmlurl=https://raw.githubusercontent.com/airbornelamb/support/master/useragent/windows/hangfix/msp.xml
+SET mspxmlurl=https://raw.githubusercontent.com/DNSFilter/support/master/useragent/windows/hangfix/msp.xml
 SET mspxmlfile=%workdir%\msp.xml
 
 REM Write dns reset
