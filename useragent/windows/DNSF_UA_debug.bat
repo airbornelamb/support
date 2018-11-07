@@ -27,7 +27,7 @@ IF %errorLevel% == 0 (
 CLS
 Echo:
 ECHO ................................................
-ECHO DNSFILTER.COM DEBUGGER v0.2
+ECHO DNSFILTER.COM DEBUGGER v0.3
 ECHO ................................................
 Echo:
 Echo:
