@@ -67,6 +67,14 @@ IF %errorlevel%==1722 ECHO hyperv test inconclusive >> %debugfile%
 ECHO --------------------------- >> %debugfile%
 Echo:
 Echo:
+ECHO Querying the agent service
+ECHO --------------------------- >> %debugfile%
+ECHO QUERYING THE AGENT SERVICE  >> %debugfile%
+ECHO --------------------------- >> %debugfile%
+Echo:
+Echo:
+SC QUERY "DNS Agent" >> %debugfile%
+SC QUERY "DNSFilter Agent" >> %debugfile%
 ECHO Getting adapter information
 ECHO --------------------------- >> %debugfile%
 ECHO GETTING ADAPTER INFORMATION >> %debugfile%
