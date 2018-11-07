@@ -1,6 +1,6 @@
 @ECHO OFF
-REM Version 0.2
-REM Created by Josh Lamb on 24AUG18
+REM Version 0.3
+REM Created by Josh Lamb on 7NOV18
 SETLOCAL EnableDelayedExpansion
 TITLE DNSFILTER DEBUGGER
 SET workdir=C:\temp
@@ -83,7 +83,7 @@ Echo:
 Echo:
 ipconfig /all >> %debugfile%
 REM (FOR %%a in (%adapterlist%) DO ( 
-REM    netsh interface ip show config %%a  >> %debugfile%
+REM    netsh interface ip show config %%a >> %debugfile%
 REM ))
 ECHO Attempting ping to 8.8.8.8
 ECHO -------------------------- >> %debugfile%
