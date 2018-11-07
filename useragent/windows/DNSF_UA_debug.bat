@@ -108,9 +108,6 @@ ECHO nslookup -type=txt debug.dnsfilter.com 103.247.37.37 >> %debugfile%
 ECHO ---------------------------------------------------- >> %debugfile%
 nslookup -type=txt debug.dnsfilter.com 103.247.37.37 >> %debugfile%
 ECHO ---------------------------------------------------- >> %debugfile%
-ECHO nslookup -type=txt debug.dnsfilter.com 8.8.8.8 >> %debugfile%
-ECHO ---------------------------------------------------- >> %debugfile%
-nslookup -type=txt debug.dnsfilter.com 8.8.8.8 >> %debugfile%
 Echo:
 Echo:
 ECHO Checking for conflicting local resolvers
