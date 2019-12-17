@@ -3,7 +3,7 @@
 @ECHO OFF
 REM Version 0.3
 REM Created by Josh Lamb on 7NOV18
-Revisioned by Jon Cohen on 11DEC19
+REM Revisioned by Jon Cohen on 11DEC19
 SETLOCAL EnableDelayedExpansion
 TITLE DNSFILTER DEBUGGER
 SET workdir=C:\temp
