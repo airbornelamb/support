@@ -5,7 +5,7 @@ Start-Transcript -path C:\Windows\Logs\Generic-UninstallUmbrella_Log.txt -append
 function UninstallProgram
 {
     #### Use wmic to uninstall Umbrella (Cisco Support website preferred command line uninstall method 1) ####
-   wmic Product where “name=‘Umbrella Roaming Client’” call uninstall /NoInteractive
+   wmic Product where “name='Umbrella Roaming Client'” call uninstall /NoInteractive
 }
 function Check_Program_Installed
 {  
